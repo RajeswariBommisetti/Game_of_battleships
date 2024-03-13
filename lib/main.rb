@@ -16,7 +16,6 @@ def main(input_file, output_file)
   player1 = Player.new(grid1, moves1)
   player2 = Player.new(grid2, moves2)
   game = Game.new(player1, player2)
-  binding.pry
   game.simulate
   result = game.result
   Input.write_output(output_file, player1.grid, player2.grid, result)

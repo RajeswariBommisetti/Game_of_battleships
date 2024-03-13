@@ -8,7 +8,6 @@ class Game
   end
 
   def simulate
-  	binding.pry
     @player1.moves.each { |move| @player2.grid.hit(*move) }
 		@player2.moves.each { |move| @player1.grid.hit(*move) }
   end
